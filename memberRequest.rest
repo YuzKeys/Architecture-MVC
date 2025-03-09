@@ -1,0 +1,58 @@
+
+// MEMBER CONTOLLER
+###############################################################
+// cette requete permet de creer des comptes
+POST http://localhost:3030/api/member/add
+Content-Type: application/json
+
+{
+    "username": "Youssef",
+    "email": "youssef@gmail.com",
+    "password": "Test1234=",
+    "role": "Admin",
+    "isActive": "true"
+}
+    
+###############################################################
+// Cette methode permet de se connecter via JWT
+POST http://localhost:3030/api/member/login
+Content-Type: application/json
+
+{
+    "username": "YuzKeys",
+    "password": "Test1234="
+}
+
+###############################################################
+// cette requete permet de recuperer la liste des utilisateurs
+GET http://localhost:3030/api/member
+
+###############################################################
+// cette requete permet de recuperer les details
+// d'un utilisateur avec son id
+GET http://localhost:3030/api/member/67ce0377220e66c5036fe4cb
+
+###############################################################
+// cette requete permet de mettre a jour un profile
+PUT http://localhost:3030/api/member/67ce045c35b25f1320f0aaea
+Content-Type: application/json
+
+{
+    "username": "Youssef",
+    "email": "youssef@gmail.com",
+    "password": "Test1234=",
+    "role": "Admin",
+    "isActive": "true"
+}
+###############################################################
+// cette requete desactive un membre avec son id
+PATCH http://localhost:3030/api/member/67ce045c35b25f1320f0aaea
+Content-Type: application/json
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+// AUTH CONTROLLER
+// Cette requete permet de creer des comptes
+POST http://localhost:3030/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "sarajohnson",
+    "firstname": "Sara",
+    "lastname": "Johnson",
+    "email": "sarajohnson@example.com",
+    "password": "hashedpassword4",
+    "role": "Member"
+}
+
+###############################################################
+// cette requete permet de se connecter (elle renvoi un JWT 
+// ce JWT est signé avec l'id de l'utilisateur, son role, et une variable d'environnement
+POST http://localhost:3030/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "sarajohnson",
+    "password": "hashedpassword4"
+}
+
+

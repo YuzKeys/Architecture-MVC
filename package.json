@@ -1,0 +1,35 @@
+{
+  "name": "architechture-mvc",
+  "version": "0.1.0",
+  "description": "Mise en place de l'architechture Modele - Vue - Controleur",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuzKeys/Architecture-MVC.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express.js",
+    "Mvc"
+  ],
+  "author": "Youssef Larbi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YuzKeys/Architecture-MVC/issues"
+  },
+  "homepage": "https://github.com/YuzKeys/Architecture-MVC#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^5.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.1",
+    "morgan": "^1.10.0"
+  }
+}
